@@ -125,3 +125,31 @@ function search() {
 }
 
 search();
+
+function someFunction() {
+	console.log('\nSome Functions');
+
+	let array = [3, 4, 7];
+	console.log('[Init]:', array);
+
+	let result = array.concat(1);
+	console.log('\n[.concat(1)]:', result);
+
+	result = array.concat(10, 20);
+	console.log('\n[.concat(10, 20)]:', result);
+
+	result = array.concat([8, 9]);
+	console.log('\n[.concat([8, 9])]:', result);
+
+	result = array.concat(['a', 'b'], 'c');
+
+	console.log('\n[.concat([a, b], c)]:', result);
+
+	console.log('\n[.join()]:', result.join());
+
+	console.log('\n[.join(", ")]:', result.join(', '));
+
+	console.log('\n[.join("_ANY_")]:', result.join('_ANY_'));
+}
+
+someFunction();
